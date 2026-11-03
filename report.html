@@ -214,7 +214,7 @@ th,.option-table th,#school-rank-history .school-rank-table th{font-size:19px}
 
 
 
-<body><nav style="padding:10px 24px;background:#f0f5f3"><a href="index.html" style="color:#126650">← 回學校總目錄</a></nav><div id="loading" role="status" style="padding:20px;text-align:center;background:#fff4d7">正在載入學校資料與完整試題圖片…</div>
+<body><div id="loading" role="status" style="padding:20px;text-align:center;background:#fff4d7">正在載入學校資料與完整試題圖片…</div>
 
 
 
@@ -306,7 +306,7 @@ async function script(src){return new Promise((ok,fail)=>{const e=document.creat
 
 
 
- if(!schools.some(s=>s.code===code)){location.replace('index.html');return;}
+ if(!schools.some(s=>s.code===code)){throw new Error('請使用學校專屬網址');}
 
 
 
