@@ -22,7 +22,7 @@
 
 
 
-<title>光榮國中115會考成績分析</title>
+<title>臺中市115會考成績分析</title>
 
 
 
@@ -294,7 +294,7 @@ const code='064537';
 
 
 
-const schools=[{code:'064537',name:'光榮國中'}];
+const schools=[{code:'064537'}];
 
 
 
@@ -306,7 +306,7 @@ async function script(src){return new Promise((ok,fail)=>{const e=document.creat
 
 
 
- if(!schools.some(s=>s.code===code)){throw Error('學校代碼不符');}
+ if(!schools.some(s=>s.code===code)){throw new Error('請使用學校專屬網址');}
 
 
 
